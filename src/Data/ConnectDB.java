@@ -21,7 +21,6 @@ public class ConnectDB {
     public static Connection getConnection(){
         try{
             Connection connection = DriverManager.getConnection(hostname, user, password);
-            System.out.println("Conectado com sucesso!");
             return connection;
         }
         catch(SQLException e){
